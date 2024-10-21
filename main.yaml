@@ -8,4 +8,4 @@
   - "variables-dev.yaml"
   #load everything under mysql
   roles:
-    - role: "{{ component }}"
+  - "{{ component }}"
