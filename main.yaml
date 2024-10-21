@@ -7,5 +7,4 @@
   vars_files:
   - "variables-dev.yaml"
   #load everything under mysql
-  roles:
-  - "{{ component }}"
+  roles: "{{ component }}"
