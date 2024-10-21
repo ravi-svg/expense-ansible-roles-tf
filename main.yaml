@@ -1,0 +1,11 @@
+# We must pass 2 variables
+# 1. component
+# 2. environment
+- name: configure backend server
+  hosts: all
+  become: yes #remote server
+  vars_files:
+  - "variables-{{ environment }}.yaml"
+  #load everything under mysql
+  roles:
+  - {{ component }}

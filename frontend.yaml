@@ -1,0 +1,8 @@
+- name: configure frontend server
+  hosts: frontend
+  become: yes #remote server
+  vars_files:
+  - /var/expense/credentials_mysql.yaml #ansible server
+  #load everything under mysql
+  roles:
+  - frontend
